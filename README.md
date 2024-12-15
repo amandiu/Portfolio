@@ -20,29 +20,28 @@ React Icons - For adding attractive and meaningful icons.
 ![Portfolio 3](https://github.com/user-attachments/assets/7548781e-d9e9-4d7b-8e69-c137c78b63c0)
 
 💻 Installation
-To run this project locally, follow the steps below:
+To run this project locally, follow the steps below: 
 
 Clone the repository:
-
 bash
-Copy code
+Copy code:
 git clone https://github.com/amandiu/Portfolio.git
 Navigate to the project directory:
 
 bash
-Copy code
+Copy code:
 cd Portfolio
 Install the dependencies:
 
 bash
-Copy code
+Copy code:
 npm install
 Run the application:
 
 bash
-Copy code
+Copy code:
 npm start
-Open your browser and go to http://localhost:3000 to view your portfolio.
+Open your browser and go to http://localhost:3000 to view my portfolio.
 
 🌟 Contributing
 If you'd like to contribute to this project, feel free to fork the repository, create a new branch, and submit a pull request. I welcome suggestions, improvements, or any feedback!
