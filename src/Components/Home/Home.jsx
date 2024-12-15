@@ -2,11 +2,12 @@ import React from "react";
 import { Link } from "react-router";
 import Services from "../Services/Services";
 import About from "../About/About";
+import Skills from "../Skills/Skills";
+import ContactMe from "../ContactMe/ContactMe";
 
 const Home = () => {
   return (
     <div>
-    
       <div className="ml-16 justify-between items-center grid md:grid-cols-2  mt-24">
         <div className="text-green-400 font-semibold">
           <h1 className="md:mt-[-200px] font-extrabold text-lg text-[#f0ac01]">
@@ -80,6 +81,12 @@ const Home = () => {
       </div>
       <Services></Services>
       <About></About>
+      <div className="mt-16">
+        <Skills></Skills>
+      </div>
+      <div className="mt-16">
+        <ContactMe></ContactMe>
+      </div>
     </div>
   );
 };

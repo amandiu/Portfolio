@@ -27,7 +27,6 @@ const About = () => {
             <div className="text-green-400 font-bold md:text-2xl">
               <h4 className="mb-2">NAME:</h4>
               <h4 className="mb-2">BIRTHDAY:</h4>
-              <h4 className="mb-2">AGE:</h4>
               <h4 className="mb-2">ADDRESS:</h4>
               <h4 className="mb-2">PHONE:</h4>
               <h4>EMAIL:</h4>
@@ -35,7 +34,6 @@ const About = () => {
             <div className="text-white font-bold md:text-2xl">
               <h4 className="mb-2">Md.Amanullah Akon</h4>
               <h4 className="mb-2">24 NOV 1999</h4>
-              <h4 className="mb-2">24</h4>
               <h4 className="mb-2">Shimrail,Narayanganj,Dhaka</h4>
               <h4 className="mb-2">01740542888</h4>
               <h4>mdamanullahakon77@gmail.com</h4>

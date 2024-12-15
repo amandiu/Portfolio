@@ -7,6 +7,8 @@ import Services from "./Components/Services/Services.jsx";
 import Home from "./Components/Home/Home.jsx";
 import Error from "./Components/Error/Error.jsx";
 import About from "./Components/About/About.jsx";
+import Skills from "./Components/Skills/Skills.jsx";
+import ContactMe from "./Components/ContactMe/ContactMe.jsx";
 
 const router = createBrowserRouter([
   {
@@ -29,6 +31,14 @@ const router = createBrowserRouter([
       {
         path:"/about",
         element: <About></About>,
+      },
+      {
+        path:"/Skills",
+        element: <Skills></Skills>,
+      },
+      {
+        path:"/contact",
+        element: <ContactMe></ContactMe>,
       }
     ],
     // children: [
