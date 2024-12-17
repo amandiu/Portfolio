@@ -3,7 +3,7 @@ import React from "react";
 const SubHeader = ({ subTitle }) => {
   return (
     <div>
-      <h1 className="text-center text-4xl mb-4 mt-8 text-[#f06a01] font-semibold">
+      <h1  className="text-center text-4xl mb-4 mt-8 text-[#f06a01] font-semibold">
         {subTitle}
       </h1>
       <div className="flex justify-center">

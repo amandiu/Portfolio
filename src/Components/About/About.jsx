@@ -21,9 +21,9 @@ const About = () => {
             learn new technologies and apply them to impactful solutions.
           </p>
         </div>
-        <div className="mt-5">
+        <div className="mt-5 ">
           <SubHeader subTitle="Information"></SubHeader>
-          <div className="flex gap-7 mt-2">
+          <div className="flex gap-7 mt-2 ml-[70px] md:ml-9">
             <div className="text-green-400 font-bold md:text-2xl">
               <h4 className="mb-2">NAME:</h4>
               <h4 className="mb-2">BIRTHDAY:</h4>
