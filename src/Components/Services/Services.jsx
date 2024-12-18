@@ -4,7 +4,7 @@ import SubHeader from "../SubHeader/SubHeader";
 
 const Services = () => {
   return (
-    <div className="px-16">
+    <div className="md:px-16">
       <TopicHeader Title="🛠️ Services"></TopicHeader>
       <SubHeader subTitle="What I Do..!!"></SubHeader>
       <ul className=" grid md:grid-cols-2 py-4 gap-2  text-green-400">

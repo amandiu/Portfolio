@@ -10,7 +10,7 @@ const About = () => {
         <div className="w-[70%] h-[1px] mt-2 bg-slate-400"></div>
       </div> */}
       <div className="grid mt-[-20px] md:grid-cols-2">
-        <div className="px-16 py-5 text-green-400 text-xl">
+        <div className="md:px-16 py-5 text-green-400 text-xl">
           <SubHeader subTitle="Biography"></SubHeader>
           <p>
             I am a passionate web developer and aspiring engineer with a
@@ -23,7 +23,7 @@ const About = () => {
         </div>
         <div className="mt-5 ">
           <SubHeader subTitle="Information"></SubHeader>
-          <div className="flex gap-7 mt-2 ml-[70px] md:ml-9">
+          <div className="flex md:gap-7 mt-2  md:ml-9">
             <div className="text-green-400 font-bold md:text-2xl">
               <h4 className="mb-2">NAME:</h4>
               <h4 className="mb-2">BIRTHDAY:</h4>

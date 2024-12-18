@@ -26,19 +26,22 @@ const Skills = () => {
   return (
     <div>
       <TopicHeader Title="💻 Skills"></TopicHeader>
-      <p className="px-16 mt-6 text-lg text-green-400 text-center">
+      <p className="md:px-16 mt-6 text-lg text-green-400 text-center">
         People will ask how skilled you are, but remember — true skill comes
         from passion, continuous learning, and perseverance. Stay dedicated, and
         you’ll become the answer they seek!
       </p>
 
-      <div className="md:grid-cols-3 mt-4 grid px-16  gap-3">
+      <div className="md:grid-cols-3 w-full mt-4 justify-center grid md:px-16  gap-3">
         <div className="flex">
           <div>
-            <div className="text-[10px]">
-              <SubHeader subTitle="Programing Language" />
-            </div>
-            <LanguageRating languageChas='2' languageC="3" languageJS='4' languageTS='4' />
+            <SubHeader subTitle="Programing Language" />
+            <LanguageRating
+              languageChas="2"
+              languageC="3"
+              languageJS="4"
+              languageTS="4"
+            />
           </div>
         </div>
         <div className="flex">

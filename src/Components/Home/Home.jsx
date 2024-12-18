@@ -45,15 +45,15 @@ const Home = () => {
               <img src="../../../public/github.png" alt="Aman" />
             </Link>
           </div>
-          <div className="grid grid-cols-2 gap-2 md:w-[60%] mt-10 text-white">
+          <div className="grid  md:grid-cols-2 gap-2 md:w-[60%] mt-10 text-white">
             <button
-              className="text-xl px-5 rounded-md py-1 font-bold bg-[#22c55e]
+              className="md:text-xl px-5 rounded-md py-1 font-bold bg-[#22c55e]
                          hover:bg-[#059862] "
             >
               Hire Me
             </button>
             <button
-              className="text-xl px-5 rounded-md py-1 font-bold bg-[#22c55e]
+              className="md:text-xl px-5 rounded-md py-1 font-bold bg-[#22c55e]
                          hover:bg-[#059862] "
             >
               Downloade CV
