@@ -1,7 +1,6 @@
 import React from "react";
 import TopicHeader from "../TopicHeader/TopicHeader";
 import SkillCard from "../skillCard/skillCard";
-import Radio from "../Radio/Radio";
 import SubHeader from "../SubHeader/SubHeader";
 
 const Skills = () => {
