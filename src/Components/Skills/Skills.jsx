@@ -4,24 +4,6 @@ import SkillCard from "../skillCard/skillCard";
 import Radio from "../Radio/Radio";
 import SubHeader from "../SubHeader/SubHeader";
 
-const LanguageRating = ({
-  languageC,
-  languageChas,
-  languageJS,
-  languageTS,
-}) => {
-  return (
-    <div>
-      <div>
-        <SkillCard value={languageC} name="C" />
-        <SkillCard value={languageChas} name="C++" />
-        <SkillCard value={languageJS} name="JavaScript" />
-        <SkillCard value={languageTS} name="TypeScript" />
-      </div>
-    </div>
-  );
-};
-
 const Skills = () => {
   return (
     <div>
@@ -32,34 +14,49 @@ const Skills = () => {
         you’ll become the answer they seek!
       </p>
 
-      <div className="md:grid-cols-3 w-full mt-4 justify-center grid md:px-16  gap-3">
+      <div className="w-full sm:grid-cols-2 md:grid-cols-3 mt-4 justify-center grid md:px-16">
         <div className="flex">
           <div>
             <SubHeader subTitle="Programing Language" />
-            <LanguageRating
-              languageChas="2"
-              languageC="3"
-              languageJS="4"
-              languageTS="4"
-            />
+            <SkillCard value="3" name="C" />
+            <SkillCard value="2" name="C++" />
+            <SkillCard value="4" name="Java Script" />
+            <SkillCard value="4" name="Type Script" />
+            <SkillCard value="3" name="HTML" />
+            <SkillCard value="3" name="CSS" />
           </div>
         </div>
         <div className="flex">
           <div>
-            <SubHeader subTitle="Programing Language" />
-            <LanguageRating />
+            <SubHeader subTitle="React" />
+            <SkillCard value="5" name="React Router" />
+            <SkillCard value="3" name="JSX element" />
+            <SkillCard value="5" name="Material UI Design" />
+            <SkillCard value="3" name="Bootstrap CSS" />
           </div>
         </div>
         <div className="flex">
           <div>
-            <SubHeader subTitle="Programing Language" />
-            <LanguageRating />
+            <SubHeader subTitle="React Native" />
+            <SkillCard value="4" name="Front End Development" />
+            <SkillCard value="3" name="Back End Development" />
           </div>
         </div>
-        <div className="flex mt-4">
+        <div className="flex">
           <div>
-            <SubHeader subTitle="Programing Language" />
-            <LanguageRating />
+            <SubHeader subTitle="Node JS" />
+            <SkillCard value="5" name="Firebase Admin Development" />
+            <SkillCard value="2" name="Web socket" />
+            <SkillCard value="3" name="Modern Java Script" />
+          </div>
+        </div>
+        <div className="flex">
+          <div>
+            <SubHeader subTitle="Firebase" />
+            <SkillCard value="3" name="Firebase Authentication" />
+            <SkillCard value="3" name="Real time database" />
+            <SkillCard value="3" name="Notification" />
+            <SkillCard value="3" name="Google Cloud API integration" />
           </div>
         </div>
       </div>

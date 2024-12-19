@@ -12,7 +12,7 @@ const SkillCard = ({ value, name }) => {
   ));
 
   return (
-    <div className="flex items-center justify-between shadow-md">
+    <div className="flex w-80 items-center justify-between shadow-md">
       <li className="list-disc">{name}</li>
       <div className="flex gap-1">{circles}</div>
     </div>
