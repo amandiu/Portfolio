@@ -23,7 +23,7 @@ const Footer = () => {
               <img className="h-6 w-6" src="../../../public/facebook (1).png" alt="#" />
             </NavLink>
             <NavLink>
-              <img className="h-6 w-6" src="../../../public/github.png" alt="#" />
+              <img className="h-6 w-6" src="../../../public/github (1).png" alt="#" />
             </NavLink>
           </div>
         </nav>

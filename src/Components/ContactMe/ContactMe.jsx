@@ -1,15 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
 import TopicHeader from "../TopicHeader/TopicHeader";
 import SubHeader from "../SubHeader/SubHeader";
 
-
-
-const handleFrom = (e)=>{
+const handleFrom = (e) => {
   e.preventDefault();
-  console.log(" Message for form")
-}
-
-
+  console.log(" Message for form");
+  const handleNameInput = () => {
+    console.log(e.target.Name.value);
+  };
+};
 
 const ContactMe = () => {
   return (
@@ -24,6 +23,7 @@ const ContactMe = () => {
         <div className="ml-24 mb-20 mr-24 border-[1px] rounded-lg border-green-500 mt-5">
           <div className="mt-4 py-5 flex-col flex justify-center items-center gap-4 ">
             <input
+              onChange="handleNameInput()"
               className="px-5 py-3 w-[70%] border-[1px] rounded-lg border-green-500 "
               type="text"
               name="Name"
@@ -62,7 +62,7 @@ const ContactMe = () => {
             />
             <button
               type="submit"
-              className="border-[1px] border-green-400 w-[30%] h-[40px] bg-white text-green-400"
+              className="border-[1px] border-green-400 w-[30%] h-[40px] rounded-lg font-extrabold bg-white text-xl text-green-400"
             >
               Submit
             </button>
