@@ -1,13 +1,27 @@
 import React, { useState } from "react";
 import TopicHeader from "../TopicHeader/TopicHeader";
 import SubHeader from "../SubHeader/SubHeader";
+import { Link } from "react-router";
+
+// const [gender, setGender] = useState("");
+
+
+const genderOptions = [
+  { label: "Male", value: "Male" },
+  { label: "Female", value: "Female" },
+  { label: "Other", value: "Other" },
+];
 
 const handleFrom = (e) => {
   e.preventDefault();
   console.log(" Message for form");
-  const handleNameInput = () => {
-    console.log(e.target.Name.value);
-  };
+
+  console.log(e.target.Name.value);
+  console.log(e.target.Email.value);
+  console.log(e.target.PhoneNumber.value);
+  console.log(e.target.message.value);
+  // setGender(e.target.value);
+  // console.log(gender);
 };
 
 const ContactMe = () => {
@@ -23,35 +37,42 @@ const ContactMe = () => {
         <div className="ml-24 mb-20 mr-24 border-[1px] rounded-lg border-green-500 mt-5">
           <div className="mt-4 py-5 flex-col flex justify-center items-center gap-4 ">
             <input
-              onChange="handleNameInput()"
               className="px-5 py-3 w-[70%] border-[1px] rounded-lg border-green-500 "
               type="text"
               name="Name"
-              placeholder="Name"
+              placeholder="Please Enter Your Full Name"
               id=""
             />
             <input
               className="px-5 py-3 w-[70%] border-[1px] rounded-lg border-green-500 "
               type="email"
               name="Email"
-              placeholder="Email"
+              placeholder="Enter Your Email"
               id=""
             />
             <div className="flex gap-3 w-[70%]">
               <input
                 className="px-5 py-3 w-[70%] border-[1px] rounded-lg border-green-500 "
-                type="email"
-                name="Email"
-                placeholder="Email"
+                type="Number"
+                name="PhoneNumber"
+                placeholder="Phone Number Please"
                 id=""
               />
-              <input
-                className="px-5 py-3 w-[30%] border-[1px] rounded-lg border-green-500 "
-                type="dropdown"
-                name="gender"
-                placeholder="gender"
-                id=""
-              />
+              <details className="dropdown">
+                <summary className="btn text-lg font-medium text-white bg-green-500 m-1">
+                  Gender
+                </summary>
+
+                <ul
+                  id="genderValu"
+                  className="menu dropdown-content bg-green-500 text-white text-lg font-semibold rounded-box z-[1] w-52 shadow"
+                >
+                  {genderOptions.map((gender) => (
+                    <a className="hover:bg-green-300 px-2 py-1 hover:rounded-r-md hover:border-l-2">{gender.value}</a>
+                  ))}
+                </ul>
+              </details>
+              {/* <p>{gender}</p> */}
             </div>
             <input
               className="px-5 py-3 w-[70%] h-[150px] border-[1px] rounded-lg border-green-500 "
