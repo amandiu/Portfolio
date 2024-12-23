@@ -5,7 +5,6 @@ import { Link } from "react-router";
 
 // const [gender, setGender] = useState("");
 
-
 const genderOptions = [
   { label: "Male", value: "Male" },
   { label: "Female", value: "Female" },
@@ -58,20 +57,25 @@ const ContactMe = () => {
                 placeholder="Phone Number Please"
                 id=""
               />
-              <details className="dropdown">
-                <summary className="btn text-lg font-medium text-white bg-green-500 m-1">
+              <div className="dropdown">
+                <button className="flex btn btn-ghost text-lg font-medium text-white justify-between w-52 bg-green-500 rounded-lg">
                   Gender
-                </summary>
+                  <div className="w-5 h-5">
+                    <img src="../../../public/arrow-down-sign-to-navigate.png" alt="" />
+                  </div>
+                </button>
 
                 <ul
                   id="genderValu"
-                  className="menu dropdown-content bg-green-500 text-white text-lg font-semibold rounded-box z-[1] w-52 shadow"
+                  className="mt-3 menu dropdown-content bg-green-500 text-white text-lg font-semibold rounded-box z-[1] w-52 shadow"
                 >
                   {genderOptions.map((gender) => (
-                    <a className="hover:bg-green-300 px-2 py-1 hover:rounded-r-md hover:border-l-2">{gender.value}</a>
+                    <a className="hover:bg-green-300 px-2 py-1 hover:rounded-r-md hover:border-l-2">
+                      {gender.value}
+                    </a>
                   ))}
                 </ul>
-              </details>
+              </div>
               {/* <p>{gender}</p> */}
             </div>
             <input
