@@ -32,26 +32,26 @@ const Home = () => {
           </h2>
           <h1 className="text-5xl mt-3 font-extrabold">Web Developer</h1>
           <div className="grid w-44 grid-cols-4 mt-10">
-            <Link to="#" className=" h-8 w-8 rounded-full bg-white">
+            <Link to="https://www.linkedin.com/in/md-amanullah-akon-b60780256/" className=" h-8 w-8 rounded-full bg-white">
               <img src="../../../public/linkedin (1).png" alt="Aman" />
             </Link>
-            <Link to="#" className=" h-8 w-8 rounded-full bg-white">
+            <Link to="https://www.instagram.com/md.amanull.52?igsh=Z3NneDhlYWR3cTlo" className=" h-8 w-8 rounded-full bg-white">
               <img src="../../../public/instagram (1).png" alt="Aman" />
             </Link>
-            <Link to="#" className=" h-8 w-8 rounded-full bg-white">
+            <Link to="https://web.facebook.com/md.amanull.52" className=" h-8 w-8 rounded-full bg-white">
               <img src="../../../public/facebook (1).png" alt="Aman" />
             </Link>
-            <Link to="#" className=" h-8 w-8 rounded-full bg-white">
+            <Link to="https://github.com/amandiu" className=" h-8 w-8 rounded-full bg-white">
               <img src="../../../public/github.png" alt="Aman" />
             </Link>
           </div>
           <div className="grid  md:grid-cols-2 gap-2 md:w-[60%] mt-10 text-white">
-            <button
+            <Link to='/contact'
               className="md:text-xl px-5 rounded-md py-1 font-bold bg-[#22c55e]
                          hover:bg-[#059862] "
             >
               Hire Me
-            </button>
+            </Link>
             <button
               className="md:text-xl px-5 rounded-md py-1 font-bold bg-[#22c55e]
                          hover:bg-[#059862] "

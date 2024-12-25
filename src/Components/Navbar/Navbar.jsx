@@ -59,12 +59,12 @@ const Navbar = () => {
         ))}
       </ul>
       <div>
-        <button
+        <Link to='/contact'
           className="text-xl px-5 rounded-md py-1 font-bold bg-[#22c55e]
                          hover:bg-[#059862] "
         >
           <u>Hire Me</u>
-        </button>
+        </Link>
       </div>
     </nav>
   );
