@@ -3,27 +3,23 @@ import TopicHeader from "../TopicHeader/TopicHeader";
 import SubHeader from "../SubHeader/SubHeader";
 import { Link } from "react-router";
 
-// const [gender, setGender] = useState("");
-
-const genderOptions = [
-  { label: "Male", value: "Male" },
-  { label: "Female", value: "Female" },
-  { label: "Other", value: "Other" },
-];
-
-const handleFrom = (e) => {
-  e.preventDefault();
-  console.log(" Message for form");
-
-  console.log(e.target.Name.value);
-  console.log(e.target.Email.value);
-  console.log(e.target.PhoneNumber.value);
-  console.log(e.target.message.value);
-  // setGender(e.target.value);
-  // console.log(gender);
-};
-
 const ContactMe = () => {
+  const genderOptions = [
+    { label: "Male", value: "Male" },
+    { label: "Female", value: "Female" },
+    { label: "Other", value: "Other" },
+  ];
+
+  const handleFrom = (e) => {
+    e.preventDefault();
+    console.log(" Message for form");
+
+    console.log(e.target.Name.value);
+    console.log(e.target.Email.value);
+    console.log(e.target.PhoneNumber.value);
+    console.log(e.target.message.value);
+    // console.log(setGender(e.target.value));
+  };
   return (
     <div className="mt-10">
       <TopicHeader Title="📬 Contact Me"></TopicHeader>
@@ -57,27 +53,26 @@ const ContactMe = () => {
                 placeholder="Phone Number Please"
                 id=""
               />
-              <div className="dropdown">
-                <button className="flex btn btn-ghost text-lg font-medium text-white justify-between w-52 bg-green-500 rounded-lg">
-                  Gender
-                  <div className="w-5 h-5">
-                    <img src="../../../public/arrow-down-sign-to-navigate.png" alt="" />
-                  </div>
-                </button>
-
+              <details className="dropdown">
+                <summary className="btn m-1 flex btn-ghost text-lg font-medium text-white justify-between w-52 bg-green-500 rounded-lg">
+                  Gander
+                </summary>
                 <ul
                   id="genderValu"
                   className="mt-3 menu dropdown-content bg-green-500 text-white text-lg font-semibold rounded-box z-[1] w-52 shadow"
                 >
-                  {genderOptions.map((gender) => (
-                    <a className="hover:bg-green-300 px-2 py-1 hover:rounded-r-md hover:border-l-2">
+                  {genderOptions.map((gender, i) => (
+                    <label
+                      key={i}
+                      className="hover:bg-green-300 px-2 py-1 hover:rounded-r-md hover:border-l-2"
+                    >
                       {gender.value}
-                    </a>
+                    </label>
                   ))}
                 </ul>
-              </div>
-              {/* <p>{gender}</p> */}
+              </details>
             </div>
+            {/* <p>{gender}</p> */}
             <input
               className="px-5 py-3 w-[70%] h-[150px] border-[1px] rounded-lg border-green-500 "
               type="text"
